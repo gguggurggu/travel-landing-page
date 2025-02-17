@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Sverige</title>
+    <link rel="stylesheet" href="./styles/explore.css" />
+    <link rel="icon" href="./img/world.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+
+    <button id="home-button" onclick="location.href='./index.html'">
+      <img src="./img/home.png" />
+    </button>
+    <button id="top-button" onclick="location.href='#welcome-page-sidebar'">
+      <img src="./img/to-the-top.png" />
+    </button>
+
+    <div id="welcome-page-sidebar" class="section-sidebar-above">
+      <a class="sidebar-above" href="#destinations">Destinations</a>
+      <a class="sidebar-above" href="#activities">Activities</a>
+      <a class="sidebar-above" href="#work-and-stay">Work and Stay</a>
+    </div>
+
+    <div id="welcome-page" class="section">
+      <div id="input-search">
+        <input type="search" placeholder="Plan your trip..." />
+        <button>Search</button>
+      </div>
+      <div id="welcome-img-container">
+        <p id="welcome-page-hello">
+          Välkommen till Sverige.<br />Welcome to Sweden.
+        </p>
+        <img src="./img/colorful-house.jpg" />
+      </div>
+      <div class="empty-div"></div>
+      <div class="banner-container">
+        <div
+          id="banner-element-weather"
+          class="banner-element js-banner-weather"
+        ></div>
+        <div
+          id="banner-element-currency"
+          class="banner-element js-banner-currency"
+        >
+          currency
+        </div>
+      </div>
+    </div>
+
+    <div id="destinations" class="section">
+      <hr />
+      <div id="banner-sas" class="banner">
+        <a
+          href="https://www.flysas.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./img/SAS.jpg"
+        /></a>
+        <p>Fly smart, fly SAS. <br />Find the best flight deals.</p>
+      </div>
+      <div id="banner-finair" class="banner">
+        <a
+          href="https://www.finnair.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./img/FINNAIR.jpg"
+        /></a>
+        <p>
+          Your gateway to Northern Europe. <br />Travel further with Finnair.
+        </p>
+      </div>
+      <div class="empty-div"></div>
+
+      <div class="destinations-banners-container">
+        <div class="destinations-banners">
+          <div class="destinations-banner">a</div>
+          <div class="destinations-banner">b</div>
+          <div class="destinations-banner">c</div>
+        </div>
+      </div>
+    </div>
+    <div id="activities" class="section"><div class="empty-div"></div></div>
+    <div id="work-and-stay" class="section">
+      <div class="empty-div"></div>
+      <div class="img-container">
+        <img src="./img/midsommar-girl.jpg" alt="background" />
+        <div class="text-overlay">
+          <button
+            onclick="window.open('https://www.swedenabroad.se/ko/about-sweden-non-swedish-citizens/\
+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD/%EC%8A%A4%EC%9B%A8%EB%8D%B4-%EB%B0%A9%EB%AC%B8-%EB%B0%8F-%EC%B2%B4%EB%A5%98/\
+%EC%8A%A4%EC%9B%A8%EB%8D%B4-%EC%B7%A8%EC%97%85/%EC%8A%A4%EC%9B%A8%EB%8D%B4-%EC%9B%8C%ED%82%B9%ED%99%80%EB%A6%AC%EB%8D%B0%EC%9D%B4-%EA%B1%B0%EC%A3%BC%ED%97%88%EA%B0%80-%EC%8B%A0%EC%B2%AD/', '_blank')"
+          >
+            Start Here →
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div id="llc">2025-02-07 강유진 제작</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/explore.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../img/main-page.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: url("../img/stockholm-city.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: zoomInAndStop 8s ease-in-out forwards;
+  filter: blur(6px);
+}
+@keyframes zoomInAndStop {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+#main-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-weight: bold;
+}
+#main-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+#section-main {
+  padding-top: 280px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 80px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+#section-main-paragraph {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 19px;
+  color: #f5f5f5;
+  position: relative;
+  z-index: 2;
+}
+
+#discover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#discover-button {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 48px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 2;
+}
+#discover-button:hover {
+  background-color: rgb(255, 205, 5, 0.8);
+  color: rgb(11, 85, 150);
+  transform: scale(1.05);
+}
+#discover-button:active {
+  background-color: rgb(200, 160, 0, 0.8);
+  color: rgb(0, 45, 105);
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

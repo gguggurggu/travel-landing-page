@@ -263,6 +263,19 @@ body::-webkit-scrollbar {
   background-color: white;
 }
 
+.title {
+  font-size: 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1136px;
+  height: fit-content;
+}
+.sub-title {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
 .banner {
   display: none;
   width: 90%;

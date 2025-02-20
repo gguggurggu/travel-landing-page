@@ -122,6 +122,10 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 38px;
 }
+.sub-empty-div {
+  width: 100%;
+  height: 15px;
+}
 
 #input-search {
   text-align: center;
@@ -251,7 +255,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 #temp-divider {
   margin: 0;
@@ -259,6 +263,7 @@ body::-webkit-scrollbar {
   height: 25px;
   background-color: #666;
 }
+
 #banner-element-currency {
   background-color: white;
 }
@@ -272,7 +277,7 @@ body::-webkit-scrollbar {
 }
 .sub-title {
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -328,7 +333,7 @@ body::-webkit-scrollbar {
   overflow-x: auto;
   overflow-y: hidden;
   width: auto;
-  height: 470px;
+  height: 500px;
   gap: 20px;
 }
 .destinations-banner {
@@ -408,6 +413,6 @@ body::-webkit-scrollbar {
 #llc {
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 232px;
   background-color: rgba(11, 85, 150, 0.08);
 }
